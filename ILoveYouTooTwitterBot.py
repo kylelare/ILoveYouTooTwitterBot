@@ -2,9 +2,9 @@ import tweepy
 import time
 
 consumer_key = #API Key
-consumer_secret =  #Acess Secret
-key =  #Acess Key
-secret = #Acess Secret
+consumer_secret =  #Access Secret
+key =  #Access Key
+secret = #Access Secret
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(key, secret)
