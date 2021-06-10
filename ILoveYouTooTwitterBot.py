@@ -37,9 +37,9 @@ def reply():
     for tweet in reversed(tweets):
         #print(str(tweet.id) + ' - ' + tweet.full_text)
         if 'love you' in tweet.full_text.lower():
-            if 'love you too :)' not in tweet.full_text.lower():
+            if ':)' not in tweet.full_text.lower():
                 print(str(tweet.id) + ' - ' + tweet.full_text)
-                api.update_status("@" + tweet.user.screen_name + " Auto reply is working :)", tweet.id)
+                api.update_status("@" + tweet.user.screen_name + " I love you too :)", tweet.id)
                 store_last_seen(FILE_NAME, tweet.id)
 
 while True:
